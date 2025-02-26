@@ -17,7 +17,6 @@ int main() {
         events.push_back(pair<int, int>(b, -1));
     }
 
-
     sort(events.begin(), events.end());
 
     int current = 0, max = 0;
