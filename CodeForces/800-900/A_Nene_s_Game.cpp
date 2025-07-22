@@ -9,6 +9,9 @@
 #define ll long long
 using namespace std;
 
+void winnerCount(int k, int q, vector<int>& kick, vector<int>& players){
+    for(int i = 0; i < )
+}
 
 int main(){
     ios_base::sync_with_stdio(false);
@@ -18,8 +21,11 @@ int main(){
     cin >> t;
 
     while(t--){
-        int n;
-        cin >> n;
+        int k, q;
+        cin >> k >> q;
+        vector<int> kick(k);
+        vector<int> players(q);
+        winnerCount(k,q,kick,players);
     }
 
     return 0;

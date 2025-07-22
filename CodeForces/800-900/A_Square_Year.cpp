@@ -9,8 +9,12 @@
 #define ll long long
 using namespace std;
 
-void robot_program(int n, int x, int k, string moves){
-    
+void squareYear(int n){
+    int sqroot = ceil(sqrt(n));
+    if(sqroot * sqroot == n)
+        cout << 0 << " " << sqroot << endl;
+    else
+        cout << "-1" << endl;
 }
 
 int main(){
@@ -21,11 +25,10 @@ int main(){
     cin >> t;
 
     while(t--){
-        int n , x, k;
-        string moves;
-        cin >> n >> x >> k;
-        cin >> moves;
-        robot_program(n, x, k, moves);
+        int n;
+        cin >> n;
+
+        squareYear(n);
     }
 
     return 0;

@@ -6,13 +6,17 @@
 #include <cmath>
 #include <queue>
 #include <stack>
+#define ll long long
 using namespace std;
 
-void median(){
+void functionName(){
     
 }
 
 int main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+        
     int t;
     cin >> t;
 
