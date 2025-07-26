@@ -9,19 +9,9 @@
 #define ll long long
 using namespace std;
 
-void winnerCount(){
-    int k, q;
-    cin >> k >> q;
-    vector<int> kick(k + 1);
-    for(int i = 1; i <= k; i++){
-        cin >> kick[i];
-    }
-    int n;
-    for(int i = 1; i <= q; i++){
-        cin >> n;
-        cout << min(kick[1] - 1, n) << " ";
-    }
-    cout << endl;
+void maxMedian(int n, int s){
+    int m = n / 2 + 1;
+    cout << s / m << endl;
 }
 
 int main(){
@@ -32,7 +22,9 @@ int main(){
     cin >> t;
 
     while(t--){
-        winnerCount();
+        int n, s;
+        cin >> n >> s;
+        maxMedian(n, s);
     }
 
     return 0;
