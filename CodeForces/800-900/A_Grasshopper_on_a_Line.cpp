@@ -9,13 +9,18 @@
 #define ll long long
 using namespace std;
 
-void sumOfPath(long long vertex){
-    long long sum = 0;
-    while(vertex > 0){
-        sum = sum + vertex;
-        vertex = vertex/2;
+void solve(){
+    int x, k;
+    cin >> x >> k;
+
+    if(x % k != 0){
+        cout << 1 << endl;
+        cout << x << endl;
     }
-    cout << sum << endl;
+    else{
+        cout << 2 << endl;
+        cout << 1 << " " << x - 1 << endl;
+    }
 }
 
 int main(){
@@ -26,9 +31,7 @@ int main(){
     cin >> t;
 
     while(t--){
-        long long vertex;
-        cin >> vertex;
-        sumOfPath(vertex);
+        solve();
     }
 
     return 0;
